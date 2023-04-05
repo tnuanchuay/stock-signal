@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "rimraf dist && webpack serve --mode=development",
-    "build": "webpack --mode=production --env PROD=true"
+    "build": "rimraf dist && webpack --mode=production --env PROD=true"
   },
   "devDependencies": {
     "css-loader": "^6.7.3",
