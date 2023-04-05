@@ -1,1 +1,621 @@
-[{"symbol": "APURE.BK", "buy": ["is under ema75 but last 2 are green"], "sell": []}, {"symbol": "ASIAN.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "CBG.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "CFRESH.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "ICHI.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "KSL.BK", "buy": ["is under ema75 but last 2 are green", "is 3 days green"], "sell": []}, {"symbol": "OSP.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "TU.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "B52.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "CPL.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "ACC.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "TOG.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "BBL.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "TISCO.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "ASK.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "CHAYO.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "FNS.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "FSS.BK", "buy": [], "sell": ["is 3 days red and 5% lost", "is crossing down ema75"]}, {"symbol": "JMT.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "PL.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "SAWAD.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "TQM.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "AH.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "IRC.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "TKT.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "ALLA.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "CRANE.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "TCJ.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "VARO.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "GC.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "AMC.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "CITY.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "CSP.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "PAP.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "TMT.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "TSTH.BK", "buy": [], "sell": ["is 3 days red and 5% lost", "is crossing down ema75"]}, {"symbol": "TCMC.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "ANAN.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "CPN.BK", "buy": ["is crossing up ema75"], "sell": []}, {"symbol": "ORI.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "PRIN.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "SIRI.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "AIMCG.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "ALLY.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "GVREIT.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "LPF.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "CNT.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "RT.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "DEMCO.BK", "buy": [], "sell": ["is 3 days red and 5% lost", "is crossing down ema75"]}, {"symbol": "GREEN.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "PTG.BK", "buy": [], "sell": ["is 3 days red and 5% lost", "is crossing down ema75"]}, {"symbol": "PTTEP.BK", "buy": ["is crossing up ema75"], "sell": []}, {"symbol": "SPRC.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "SSP.BK", "buy": ["is crossing up ema75"], "sell": []}, {"symbol": "WHAUP.BK", "buy": ["is crossing up ema75"], "sell": []}, {"symbol": "COM7.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "DOHOME.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "MAKRO.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "SABUY.BK", "buy": [], "sell": ["is 3 days red and 5% lost", "is crossing down ema75"]}, {"symbol": "SINGER.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "LPH.BK", "buy": ["is crossing up ema75"], "sell": []}, {"symbol": "M-CHAI.BK", "buy": ["is 3 days green"], "sell": []}, {"symbol": "THG.BK", "buy": ["is crossing up ema75", "is 3 days green"], "sell": []}, {"symbol": "MPIC.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "PLANB.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "TH.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "TKS.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "VGI.BK", "buy": ["is under ema75 but last 2 are green", "is 3 days green"], "sell": []}, {"symbol": "ASIMAR.BK", "buy": ["is under ema75 but last 2 are green"], "sell": []}, {"symbol": "BA.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "JWD.BK", "buy": ["is crossing up ema75"], "sell": []}, {"symbol": "PORT.BK", "buy": ["is under ema75 but last 2 are green", "is 3 days green"], "sell": []}, {"symbol": "PRM.BK", "buy": ["is crossing up ema75"], "sell": []}, {"symbol": "RCL.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "DELTA.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "KCE.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "TEAM.BK", "buy": [], "sell": ["is 3 days red and 5% lost", "is crossing down ema75"]}, {"symbol": "W.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "AIT.BK", "buy": [], "sell": ["is 3 days red and 5% lost", "is crossing down ema75"]}, {"symbol": "HUMAN.BK", "buy": [], "sell": ["is 3 days red and 5% lost", "is crossing down ema75"]}, {"symbol": "INET.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "INTUCH.BK", "buy": ["is crossing up ema75"], "sell": []}, {"symbol": "JTS.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "MFEC.BK", "buy": [], "sell": ["is crossing down ema75"]}, {"symbol": "SAMTEL.BK", "buy": [], "sell": ["is 3 days red and 5% lost"]}, {"symbol": "SYMC.BK", "buy": ["is crossing up ema75"], "sell": []}]
+{
+    "data": [
+        {
+            "symbol": "APURE.BK",
+            "buy": [
+                "is under ema75 but last 2 are green"
+            ],
+            "sell": []
+        },
+        {
+            "symbol": "ASIAN.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "CBG.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "CFRESH.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "ICHI.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "KSL.BK",
+            "buy": [
+                "is under ema75 but last 2 are green",
+                "is 3 days green"
+            ],
+            "sell": []
+        },
+        {
+            "symbol": "OSP.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "TU.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "B52.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "CPL.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "ACC.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "TOG.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "BBL.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "TISCO.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "ASK.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "CHAYO.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "FNS.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "FSS.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost",
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "JMT.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "PL.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "SAWAD.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "TQM.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "AH.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "IRC.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "TKT.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "ALLA.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "CRANE.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "TCJ.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "VARO.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "GC.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "AMC.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "CITY.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "CSP.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "PAP.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "TMT.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "TSTH.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost",
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "TCMC.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "ANAN.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "CPN.BK",
+            "buy": [
+                "is crossing up ema75"
+            ],
+            "sell": []
+        },
+        {
+            "symbol": "ORI.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "PRIN.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "SIRI.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "AIMCG.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "ALLY.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "GVREIT.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "LPF.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "CNT.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "RT.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "DEMCO.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost",
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "GREEN.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "PTG.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost",
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "PTTEP.BK",
+            "buy": [
+                "is crossing up ema75"
+            ],
+            "sell": []
+        },
+        {
+            "symbol": "SPRC.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "SSP.BK",
+            "buy": [
+                "is crossing up ema75"
+            ],
+            "sell": []
+        },
+        {
+            "symbol": "WHAUP.BK",
+            "buy": [
+                "is crossing up ema75"
+            ],
+            "sell": []
+        },
+        {
+            "symbol": "COM7.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "DOHOME.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "MAKRO.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "SABUY.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost",
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "SINGER.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "LPH.BK",
+            "buy": [
+                "is crossing up ema75"
+            ],
+            "sell": []
+        },
+        {
+            "symbol": "M-CHAI.BK",
+            "buy": [
+                "is 3 days green"
+            ],
+            "sell": []
+        },
+        {
+            "symbol": "THG.BK",
+            "buy": [
+                "is crossing up ema75",
+                "is 3 days green"
+            ],
+            "sell": []
+        },
+        {
+            "symbol": "MPIC.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "PLANB.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "TH.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "TKS.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "VGI.BK",
+            "buy": [
+                "is under ema75 but last 2 are green",
+                "is 3 days green"
+            ],
+            "sell": []
+        },
+        {
+            "symbol": "ASIMAR.BK",
+            "buy": [
+                "is under ema75 but last 2 are green"
+            ],
+            "sell": []
+        },
+        {
+            "symbol": "BA.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "JWD.BK",
+            "buy": [
+                "is crossing up ema75"
+            ],
+            "sell": []
+        },
+        {
+            "symbol": "PORT.BK",
+            "buy": [
+                "is under ema75 but last 2 are green",
+                "is 3 days green"
+            ],
+            "sell": []
+        },
+        {
+            "symbol": "PRM.BK",
+            "buy": [
+                "is crossing up ema75"
+            ],
+            "sell": []
+        },
+        {
+            "symbol": "RCL.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "DELTA.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "KCE.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "TEAM.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost",
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "W.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "AIT.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost",
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "HUMAN.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost",
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "INET.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "INTUCH.BK",
+            "buy": [
+                "is crossing up ema75"
+            ],
+            "sell": []
+        },
+        {
+            "symbol": "JTS.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "MFEC.BK",
+            "buy": [],
+            "sell": [
+                "is crossing down ema75"
+            ]
+        },
+        {
+            "symbol": "SAMTEL.BK",
+            "buy": [],
+            "sell": [
+                "is 3 days red and 5% lost"
+            ]
+        },
+        {
+            "symbol": "SYMC.BK",
+            "buy": [
+                "is crossing up ema75"
+            ],
+            "sell": []
+        }
+    ],
+    "metadata": {
+        "date": "20230405"
+    }
+}
