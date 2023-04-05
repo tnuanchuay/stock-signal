@@ -23,8 +23,8 @@ module.exports = (env) => {
         },
         output: {
             filename: 'app.js',
-            publicPath: env.PROD ? '/web/' : '/', 
-            path: env.PROD ? path.resolve(__dirname, 'web') : path.resolve(__dirname, 'dist')
+            publicPath: env.PROD ? '/stocksignals/' : '/', 
+            path: env.PROD ? path.resolve(__dirname, 'stocksignals') : path.resolve(__dirname, 'dist')
         },
         mode: 'development',
         plugins: [new HtmlWebpackPlugin({
