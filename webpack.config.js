@@ -5,6 +5,7 @@ module.exports = (env) => {
     console.table(env);
     return {
         entry: './src/index.tsx',
+        devtool: 'inline-source-map',
         module: {
             rules: [
                 {
@@ -23,8 +24,8 @@ module.exports = (env) => {
         },
         output: {
             filename: 'app.js',
-            publicPath: env.PROD ? '/stocksignals/' : '/', 
-            path: env.PROD ? path.resolve(__dirname, 'stocksignals') : path.resolve(__dirname, 'dist')
+            publicPath: env.PROD ? '/signals/' : '/', 
+            path: env.PROD ? path.resolve(__dirname, 'signals') : path.resolve(__dirname, 'dist')
         },
         mode: 'development',
         plugins: [new HtmlWebpackPlugin({

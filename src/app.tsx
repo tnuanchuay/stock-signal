@@ -20,38 +20,10 @@ import '@fontsource/roboto/700.css';
 import { FilterSelector } from './components/filter';
 import { StockSort as Sort } from './constants/sort';
 import { StockFilter } from './constants/filter';
-import { compose } from '@mui/system';
 import { Order } from './constants/order';
-
-function createData(
-    name: string,
-    calories: number,
-    fat: number,
-    carbs: number,
-    protein: number,
-    price: number,
-) {
-    return {
-        name,
-        calories,
-        fat,
-        carbs,
-        protein,
-        price,
-        history: [
-            {
-                date: '2020-01-05',
-                customerId: '11091700',
-                amount: 3,
-            },
-            {
-                date: '2020-01-02',
-                customerId: 'Anonymous',
-                amount: 1,
-            },
-        ],
-    };
-}
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { Container, CssBaseline } from '@mui/material';
+import Link from '@mui/material/Link';
 
 interface DataState {
     data: DataElement[];
@@ -66,6 +38,7 @@ interface DataElement {
     symbol: string;
     buy: string[];
     sell: string[];
+    activities: string[];
     last_day_percent_change: number;
     last_5days_percent_change: number;
 }
@@ -79,8 +52,8 @@ const AppComponent: React.FC = () => {
     useEffect(() => {
         const fetchData = async () => {
             console.log("Getting Data");
-            var res = await fetch('https://raw.githubusercontent.com/tnuanchuay/stock-signal/master/data/latest.json')
-            var json = await res.json();
+            const res = await fetch('https://raw.githubusercontent.com/tnuanchuay/stock-signal/master/data/latest.json')
+            const json = await res.json();
 
             return json;
         }
@@ -94,6 +67,8 @@ const AppComponent: React.FC = () => {
                 return item.buy.length > 0;
             case StockFilter.OnlySell:
                 return item.sell.length > 0;
+            case StockFilter.Activities:
+                return item.activities.length > 0;
             default:
             case StockFilter.All:
                 return true;
@@ -108,9 +83,9 @@ const AppComponent: React.FC = () => {
                 default:
                     return [""].concat(a.buy).concat(a.sell).length < [""].concat(b.buy).concat(b.sell).length ? orderValue[0] : orderValue[1];
                 case Sort.ByLastDayChange:
-                    return a.last_day_percent_change < b.last_day_percent_change ? orderValue[0]  : orderValue[1];
+                    return a.last_day_percent_change < b.last_day_percent_change ? orderValue[0] : orderValue[1];
                 case Sort.ByLast5DayChange:
-                    return a.last_5days_percent_change < b.last_5days_percent_change ? orderValue[0]  : orderValue[1];
+                    return a.last_5days_percent_change < b.last_5days_percent_change ? orderValue[0] : orderValue[1];
             }
         }
 
@@ -134,67 +109,71 @@ const AppComponent: React.FC = () => {
                 <Box>
                     <Box display="flex">
                         <Typography variant="h1" component="h1">
-                            Stock Signals
+                            Signals
                         </Typography>
                     </Box>
                     <Box display="flex" justifyContent="right">
                         <Typography variant='subtitle2' color='GrayText'>
-                            {data?.metadata.date}
+                            v.{data?.metadata.date}
                         </Typography>
                     </Box>
                 </Box>
             </Box>
-            <Box display="flex" justifyContent="right">
-                <Box display="flex">
-                    <FilterSelector setFilter={setFilter} />
+            <Container sx={{ mt: '2vh' }}>
+                <Box display="flex" justifyContent="right">
+                    <Box display="flex">
+                        <FilterSelector setFilter={setFilter} />
+                    </Box>
                 </Box>
-            </Box>
-            <Box>
-                <TableContainer component={Paper}>
-                    <Table aria-label="collapsible table">
-                        <TableHead>
-                            <TableRow>
-                                <TableCell />
-                                <TableCell>Symbols</TableCell>
-                                <TableCell align="right" onClick={clickToSort(Sort.BySignal)}>
-                                    <Box display="flex" justifyContent="right">
-                                        {sort === Sort.BySignal && (order === Order.Ascending ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />)}
-                                        <Typography variant="subtitle2" fontWeight={sort === Sort.BySignal ? 600 : 500}>
-                                            # of Signal
-                                        </Typography>
-                                    </Box>
-                                </TableCell>
-                                <TableCell align="right" onClick={clickToSort(Sort.ByLastDayChange)}>
-                                    <Box display="flex" justifyContent="right">
-                                        {sort === Sort.ByLastDayChange && (order === Order.Ascending ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />)}
-                                        <Typography variant="subtitle2" fontWeight={sort === Sort.ByLastDayChange ? 600 : 500}>
-                                            Last day % change
-                                        </Typography>
-                                    </Box>
-                                </TableCell>
-                                <TableCell align="right" onClick={clickToSort(Sort.ByLast5DayChange)} >
-                                    <Box display="flex" justifyContent="right">
-                                        {sort === Sort.ByLast5DayChange && (order === Order.Ascending ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />)}
-                                        <Typography variant="subtitle2" fontWeight={sort === Sort.ByLast5DayChange ? 600 : 500}>
-                                            Last 5 day % change
-                                        </Typography>
-                                    </Box>
-                                </TableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {
-                                data && data.data
-                                    .filter(filterFunction)
-                                    .sort(sortFunction(order))
-                                    .map((row) => (
-                                        <Row key={row.symbol} {...row} />
-                                    ))
-                            }
-                        </TableBody>
-                    </Table>
-                </TableContainer>
-            </Box>
+            </Container>
+            <Container sx={{ mt: '2vh' }}>
+                <Box>
+                    <TableContainer component={Paper}>
+                        <Table aria-label="collapsible table">
+                            <TableHead>
+                                <TableRow>
+                                    <TableCell />
+                                    <TableCell>Symbols</TableCell>
+                                    <TableCell align="right" onClick={clickToSort(Sort.BySignal)}>
+                                        <Box display="flex" justifyContent="right">
+                                            {sort === Sort.BySignal && (order === Order.Ascending ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />)}
+                                            <Typography variant="subtitle2" fontWeight={sort === Sort.BySignal ? 600 : 500}>
+                                                # of Signal
+                                            </Typography>
+                                        </Box>
+                                    </TableCell>
+                                    <TableCell align="right" onClick={clickToSort(Sort.ByLastDayChange)}>
+                                        <Box display="flex" justifyContent="right">
+                                            {sort === Sort.ByLastDayChange && (order === Order.Ascending ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />)}
+                                            <Typography variant="subtitle2" fontWeight={sort === Sort.ByLastDayChange ? 600 : 500}>
+                                                Last day % change
+                                            </Typography>
+                                        </Box>
+                                    </TableCell>
+                                    <TableCell align="right" onClick={clickToSort(Sort.ByLast5DayChange)} >
+                                        <Box display="flex" justifyContent="right">
+                                            {sort === Sort.ByLast5DayChange && (order === Order.Ascending ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />)}
+                                            <Typography variant="subtitle2" fontWeight={sort === Sort.ByLast5DayChange ? 600 : 500}>
+                                                Last 5 day % change
+                                            </Typography>
+                                        </Box>
+                                    </TableCell>
+                                </TableRow>
+                            </TableHead>
+                            <TableBody>
+                                {
+                                    data && data.data
+                                        .filter(filterFunction)
+                                        .sort(sortFunction(order))
+                                        .map((row) => (
+                                            <Row key={row.symbol} {...row} />
+                                        ))
+                                }
+                            </TableBody>
+                        </Table>
+                    </TableContainer>
+                </Box>
+            </Container>
         </>
     )
 }
@@ -214,16 +193,39 @@ const Row: React.FC<DataElement> = (props) => {
                         {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
                     </IconButton>
                 </TableCell>
-                <TableCell component="th" scope="row">{props.symbol}</TableCell>
-                <TableCell align="right">{props.buy.length + props.sell.length}</TableCell>
-                <TableCell align="right">{Math.round(props.last_day_percent_change * 100) / 100} %</TableCell>
-                <TableCell align="right">{Math.round(props.last_5days_percent_change * 100) / 100} %</TableCell>
+                <TableCell component="th" scope="row">
+                    <Link href={`https://www.tradingview.com/chart/?symbol=SET%3A${props.symbol.slice(0, -3)}`} variant='body1'>
+                        {props.symbol}
+                    </Link>
+                </TableCell>
+                <TableCell align="right">
+                    <Typography variant='body1'>
+                        {props.buy.length + props.sell.length}
+                    </Typography>
+                </TableCell>
+                <TableCell align="right">
+                    <Typography variant='body1'>
+                        {Math.round(props.last_day_percent_change * 100) / 100} % {props.last_day_percent_change > 0 ? "🟢" : "🔴"}
+                    </Typography>
+                </TableCell>
+                <TableCell align="right">
+                    <Typography variant='body1'>
+                        { }{Math.round(props.last_5days_percent_change * 100) / 100} % {props.last_5days_percent_change > 0 ? "🟢" : "🔴"}
+                    </Typography>
+                </TableCell>
             </TableRow>
             <TableRow>
                 <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
                     <Collapse in={open} timeout="auto" unmountOnExit>
-                        {props.buy.map(i => <Typography key={props.symbol + i} variant="body1">+ {i}</Typography>)}
-                        {props.sell.map(i => <Typography key={props.symbol + i} variant="body1">- {i}</Typography>)}
+                        <Box>
+                            {props.buy.map(i => <Typography key={props.symbol + i} variant="body1">🟩 {i}</Typography>)}
+                        </Box>
+                        <Box>
+                            {props.activities.map(i => <Typography key={props.symbol + i} variant="body1">🟦 {i}</Typography>)}
+                        </Box>
+                        <Box>
+                            {props.sell.map(i => <Typography key={props.symbol + i} variant="body1">🟥 {i}</Typography>)}
+                        </Box>
                     </Collapse>
                 </TableCell>
             </TableRow>
@@ -231,4 +233,15 @@ const Row: React.FC<DataElement> = (props) => {
     );
 }
 
-export const App = <AppComponent />;
+const darkTheme = createTheme({
+    palette: {
+        mode: 'dark',
+    },
+});
+
+export const App = (
+    <ThemeProvider theme={darkTheme}>
+        <CssBaseline />
+        <AppComponent />;
+    </ThemeProvider>
+)

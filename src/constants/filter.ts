@@ -1,5 +1,6 @@
 export enum StockFilter {
     All,
     OnlyBuy,
-    OnlySell
+    OnlySell,
+    Activities,
 }

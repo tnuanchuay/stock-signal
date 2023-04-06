@@ -1,30 +1,36 @@
-import React from 'react';
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Radio from '@mui/material/Radio';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { StockFilter } from '../constants/filter';
 
 interface Props {
-    setFilter:  React.Dispatch<React.SetStateAction<StockFilter>>;
+    setFilter: React.Dispatch<React.SetStateAction<StockFilter>>;
 }
 
 export const FilterSelector: React.FC<Props> = (props) => {
     return (
-        <FormControl>
-            <RadioGroup
-                aria-labelledby="demo-radio-buttons-group-label"
-                defaultValue={StockFilter.All}
-                name="radio-buttons-group"
-                onChange={(event) => {
-                    const filter = parseInt((event.target as HTMLInputElement).value);
-                    props.setFilter(filter);
-                }}
-            >
-                <FormControlLabel value={StockFilter.All} control={<Radio />} label="All" />
-                <FormControlLabel value={StockFilter.OnlyBuy.toString()} control={<Radio />} label="Only Buy" />
-                <FormControlLabel value={StockFilter.OnlySell} control={<Radio />} label="Only Sell" />
-            </RadioGroup>
-        </FormControl>
+        <Box sx={{ minWidth: 120 }}>
+            <FormControl fullWidth>
+                <InputLabel id="demo-simple-select-label">Filter</InputLabel>
+                <Select
+                    labelId="demo-simple-select-label"
+                    id="demo-simple-select"
+                    label="Filter"
+                    defaultValue={StockFilter.All}
+                    onChange={(event) => {
+                        const filter = parseInt((event.target as HTMLInputElement).value);
+                        props.setFilter(filter);
+                    }}
+                >
+                    <MenuItem value={StockFilter.All}>All</MenuItem>
+                    <MenuItem value={StockFilter.OnlyBuy}>Only Buy</MenuItem>
+                    <MenuItem value={StockFilter.OnlySell}>Only Sell</MenuItem>
+                    <MenuItem value={StockFilter.Activities}>Activities</MenuItem>
+                </Select>
+            </FormControl>
+        </Box>
     );
 }
