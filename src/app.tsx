@@ -13,17 +13,15 @@ import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import Radio from '@mui/material/Radio';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
-import { format, parse } from 'date-fns'
-
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+import { FilterSelector } from './components/filter';
+import { StockSort as Sort } from './constants/sort';
+import { StockFilter } from './constants/filter';
+import { compose } from '@mui/system';
+import { Order } from './constants/order';
 
 function createData(
     name: string,
@@ -55,6 +53,152 @@ function createData(
     };
 }
 
+interface DataState {
+    data: DataElement[];
+    metadata: MetaData;
+}
+
+interface MetaData {
+    date: string;
+}
+
+interface DataElement {
+    symbol: string;
+    buy: string[];
+    sell: string[];
+    last_day_percent_change: number;
+    last_5days_percent_change: number;
+}
+
+const AppComponent: React.FC = () => {
+    const [data, setData] = useState<DataState | undefined>(undefined);
+    const [filter, setFilter] = useState(StockFilter.All);
+    const [sort, setSort] = useState(Sort.BySignal);
+    const [order, setOrder] = useState(Order.Descending);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            console.log("Getting Data");
+            var res = await fetch('https://raw.githubusercontent.com/tnuanchuay/stock-signal/master/data/latest.json')
+            var json = await res.json();
+
+            return json;
+        }
+
+        fetchData().then(data => setData(data)).catch(console.error);
+    }, []);
+
+    const filterFunction = (item: DataElement) => {
+        switch (filter) {
+            case StockFilter.OnlyBuy:
+                return item.buy.length > 0;
+            case StockFilter.OnlySell:
+                return item.sell.length > 0;
+            default:
+            case StockFilter.All:
+                return true;
+        }
+    };
+
+    const sortFunction = (order: Order): (a: DataElement, b: DataElement) => number => {
+        const orderValue = order === Order.Ascending ? [-1, 1] : [1, -1]
+        return (a: DataElement, b: DataElement) => {
+            switch (sort) {
+                case Sort.BySignal:
+                default:
+                    return [""].concat(a.buy).concat(a.sell).length < [""].concat(b.buy).concat(b.sell).length ? orderValue[0] : orderValue[1];
+                case Sort.ByLastDayChange:
+                    return a.last_day_percent_change < b.last_day_percent_change ? orderValue[0]  : orderValue[1];
+                case Sort.ByLast5DayChange:
+                    return a.last_5days_percent_change < b.last_5days_percent_change ? orderValue[0]  : orderValue[1];
+            }
+        }
+
+    }
+
+    const clickToSort = (newSort: Sort): () => void => {
+        return () => {
+            if (newSort != sort) {
+                setSort(newSort);
+                setOrder(Order.Descending);
+                return;
+            }
+
+            setOrder(order === Order.Descending ? Order.Ascending : Order.Descending);
+        }
+    }
+
+    return (
+        <>
+            <Box display="flex" justifyContent="center" >
+                <Box>
+                    <Box display="flex">
+                        <Typography variant="h1" component="h1">
+                            Stock Signals
+                        </Typography>
+                    </Box>
+                    <Box display="flex" justifyContent="right">
+                        <Typography variant='subtitle2' color='GrayText'>
+                            {data?.metadata.date}
+                        </Typography>
+                    </Box>
+                </Box>
+            </Box>
+            <Box display="flex" justifyContent="right">
+                <Box display="flex">
+                    <FilterSelector setFilter={setFilter} />
+                </Box>
+            </Box>
+            <Box>
+                <TableContainer component={Paper}>
+                    <Table aria-label="collapsible table">
+                        <TableHead>
+                            <TableRow>
+                                <TableCell />
+                                <TableCell>Symbols</TableCell>
+                                <TableCell align="right" onClick={clickToSort(Sort.BySignal)}>
+                                    <Box display="flex" justifyContent="right">
+                                        {sort === Sort.BySignal && (order === Order.Ascending ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />)}
+                                        <Typography variant="subtitle2" fontWeight={sort === Sort.BySignal ? 600 : 500}>
+                                            # of Signal
+                                        </Typography>
+                                    </Box>
+                                </TableCell>
+                                <TableCell align="right" onClick={clickToSort(Sort.ByLastDayChange)}>
+                                    <Box display="flex" justifyContent="right">
+                                        {sort === Sort.ByLastDayChange && (order === Order.Ascending ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />)}
+                                        <Typography variant="subtitle2" fontWeight={sort === Sort.ByLastDayChange ? 600 : 500}>
+                                            Last day % change
+                                        </Typography>
+                                    </Box>
+                                </TableCell>
+                                <TableCell align="right" onClick={clickToSort(Sort.ByLast5DayChange)} >
+                                    <Box display="flex" justifyContent="right">
+                                        {sort === Sort.ByLast5DayChange && (order === Order.Ascending ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />)}
+                                        <Typography variant="subtitle2" fontWeight={sort === Sort.ByLast5DayChange ? 600 : 500}>
+                                            Last 5 day % change
+                                        </Typography>
+                                    </Box>
+                                </TableCell>
+                            </TableRow>
+                        </TableHead>
+                        <TableBody>
+                            {
+                                data && data.data
+                                    .filter(filterFunction)
+                                    .sort(sortFunction(order))
+                                    .map((row) => (
+                                        <Row key={row.symbol} {...row} />
+                                    ))
+                            }
+                        </TableBody>
+                    </Table>
+                </TableContainer>
+            </Box>
+        </>
+    )
+}
+
 const Row: React.FC<DataElement> = (props) => {
     const [open, setOpen] = React.useState(false);
 
@@ -70,110 +214,21 @@ const Row: React.FC<DataElement> = (props) => {
                         {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
                     </IconButton>
                 </TableCell>
-                <TableCell component="th" scope="row">
-                    {props.symbol}
-                </TableCell>
-                <TableCell align="right">{props.buy.length}</TableCell>
-                <TableCell align="right">{props.sell.length}</TableCell>
+                <TableCell component="th" scope="row">{props.symbol}</TableCell>
+                <TableCell align="right">{props.buy.length + props.sell.length}</TableCell>
+                <TableCell align="right">{Math.round(props.last_day_percent_change * 100) / 100} %</TableCell>
+                <TableCell align="right">{Math.round(props.last_5days_percent_change * 100) / 100} %</TableCell>
             </TableRow>
             <TableRow>
                 <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
                     <Collapse in={open} timeout="auto" unmountOnExit>
-                        {props.buy.map(i => <Box key={props.symbol+i}>+ {i}</Box>)}
-                        {props.sell.map(i => <Box key={props.symbol+i}>- {i}</Box>)}
+                        {props.buy.map(i => <Typography key={props.symbol + i} variant="body1">+ {i}</Typography>)}
+                        {props.sell.map(i => <Typography key={props.symbol + i} variant="body1">- {i}</Typography>)}
                     </Collapse>
                 </TableCell>
             </TableRow>
         </React.Fragment>
     );
-}
-
-interface DataState {
-    data: DataElement[];
-    metadata: MetaData;
-}
-
-interface MetaData {
-    date: string;
-}
-
-interface DataElement {
-    symbol: string;
-    buy: string[];
-    sell: string[];
-}
-
-const AppComponent: React.FC = () => {
-    const [data, setData] = useState<DataState | undefined>(undefined);
-    const [filter, setFilter] = useState("all");
-    useEffect(() => {
-        const fetchData = async () => {
-            console.log("Getting Data");
-            var res = await fetch('https://raw.githubusercontent.com/tnuanchuay/stock-signal/master/data/latest.json')
-            var json = await res.json();
-
-            return json;
-        }
-
-        fetchData().then(data => setData(data)).catch(console.error);
-    }, []);
-
-
-    return (
-        <>
-            <Box>
-                <Typography variant="h1" component="h2">
-                    Stock Signals
-                </Typography>
-                <Typography variant='subtitle2'>
-                    {data?.metadata.date}
-                </Typography>
-            </Box>
-            <Box>
-                <FormControl>
-                    <RadioGroup
-                        aria-labelledby="demo-radio-buttons-group-label"
-                        defaultValue="all"
-                        name="radio-buttons-group"
-                        onChange={(event) => setFilter((event.target as HTMLInputElement).value)}
-                    >
-                        <FormControlLabel value="all" control={<Radio />} label="All" />
-                        <FormControlLabel value="buy" control={<Radio />} label="Only Buy" />
-                        <FormControlLabel value="sell" control={<Radio />} label="Only Sell" />
-                    </RadioGroup>
-                </FormControl>
-            </Box>
-            <Box>
-                <TableContainer component={Paper}>
-                    <Table aria-label="collapsible table">
-                        <TableHead>
-                            <TableRow>
-                                <TableCell />
-                                <TableCell>Symbols</TableCell>
-                                <TableCell align="right"># of Buy Signal</TableCell>
-                                <TableCell align="right"># of Sell Signal</TableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {data && data.data.filter(i => {
-                                if(filter === "all")
-                                    return true;
-
-                                if (filter === "buy")
-                                    return i.buy.length > 0;
-
-                                return i.sell.length > 0;
-                            }).sort((a, b) => {
-                                return (a.buy.length + a.sell.length) > (b.buy.length + b.sell.length) ? -1 : 1
-                            }).map((row) => (
-                                <Row key={row.symbol} {...row} />
-                            ))}
-                        </TableBody>
-                    </Table>
-                </TableContainer>
-            </Box>
-        </>
-    )
 }
 
 export const App = <AppComponent />;
