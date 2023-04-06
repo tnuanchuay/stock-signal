@@ -138,7 +138,7 @@ const AppComponent: React.FC = () => {
                                         <Box display="flex" justifyContent="right">
                                             {sort === Sort.BySignal && (order === Order.Ascending ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />)}
                                             <Typography variant="subtitle2" fontWeight={sort === Sort.BySignal ? 600 : 500}>
-                                                # of Signal
+                                                Signals
                                             </Typography>
                                         </Box>
                                     </TableCell>
@@ -194,14 +194,17 @@ const Row: React.FC<DataElement> = (props) => {
                     </IconButton>
                 </TableCell>
                 <TableCell component="th" scope="row">
-                    <Link href={`https://www.tradingview.com/chart/?symbol=SET%3A${props.symbol.slice(0, -3)}`} variant='body1'>
+                    <Link href={`https://www.tradingview.com/chart/?symbol=SET%3A${props.symbol.slice(0, -3)}`} variant='body1' target="_blank">
                         {props.symbol}
                     </Link>
                 </TableCell>
                 <TableCell align="right">
-                    <Typography variant='body1'>
-                        {props.buy.length + props.sell.length}
-                    </Typography>
+                    {
+                        ([] as string[])
+                            .concat(props.buy.map(_ => "🟩"))
+                            .concat(props.activities.map(_ => "🟦"))
+                            .concat(props.sell.map(_ => "🟥"))
+                    }
                 </TableCell>
                 <TableCell align="right">
                     <Typography variant='body1'>
