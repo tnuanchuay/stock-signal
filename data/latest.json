@@ -5,35 +5,45 @@
             "buy": [
                 "is under ema75 but last 2 are green"
             ],
-            "sell": []
+            "sell": [],
+            "last_day_percent_change": 0.41152222998090987,
+            "last_5days_percent_change": 0.0
         },
         {
             "symbol": "ASIAN.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -2.5210020729193534,
+            "last_5days_percent_change": -5.6910552716285245
         },
         {
             "symbol": "CBG.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -2.5210084033613445,
+            "last_5days_percent_change": -10.539845758354756
         },
         {
             "symbol": "CFRESH.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -1.8518610500991368,
+            "last_5days_percent_change": -5.357148369051949
         },
         {
             "symbol": "ICHI.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -2.3622062617355586,
+            "last_5days_percent_change": -5.343517118744705
         },
         {
             "symbol": "KSL.BK",
@@ -41,84 +51,108 @@
                 "is under ema75 but last 2 are green",
                 "is 3 days green"
             ],
-            "sell": []
+            "sell": [],
+            "last_day_percent_change": 1.1904821881092977,
+            "last_5days_percent_change": 8.974366028163363
         },
         {
             "symbol": "OSP.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -1.6260162601626018,
+            "last_5days_percent_change": -1.6260162601626018
         },
         {
             "symbol": "TU.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -2.941180595477044,
+            "last_5days_percent_change": -7.692310257327336
         },
         {
             "symbol": "B52.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -1.9801961500356329,
+            "last_5days_percent_change": -5.714280524221172
         },
         {
             "symbol": "CPL.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -6.766919584552951,
+            "last_5days_percent_change": -11.428569239013012
         },
         {
             "symbol": "ACC.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": 0.7999992370605469,
+            "last_5days_percent_change": -1.5624985448084445
         },
         {
             "symbol": "TOG.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -0.5376364484882058,
+            "last_5days_percent_change": -0.5376364484882058
         },
         {
             "symbol": "BBL.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -0.9708737864077669,
+            "last_5days_percent_change": -1.2903225806451613
         },
         {
             "symbol": "TISCO.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -0.9852216748768473,
+            "last_5days_percent_change": -0.49504950495049505
         },
         {
             "symbol": "ASK.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": 0.0,
+            "last_5days_percent_change": -5.263157894736842
         },
         {
             "symbol": "CHAYO.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -2.547768301845579,
+            "last_5days_percent_change": -5.555558826043455
         },
         {
             "symbol": "FNS.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -1.1235944521335182,
+            "last_5days_percent_change": -1.675976091011433
         },
         {
             "symbol": "FSS.BK",
@@ -126,126 +160,162 @@
             "sell": [
                 "is 3 days red and 5% lost",
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -3.910610879026677,
+            "last_5days_percent_change": -7.027026678716471
         },
         {
             "symbol": "JMT.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -4.972375690607735,
+            "last_5days_percent_change": -7.027027027027027
         },
         {
             "symbol": "PL.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": 0.0,
+            "last_5days_percent_change": -2.2900742519207253
         },
         {
             "symbol": "SAWAD.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -3.7735849056603774,
+            "last_5days_percent_change": -1.9230769230769231
         },
         {
             "symbol": "TQM.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -4.651162790697675,
+            "last_5days_percent_change": -6.8181818181818175
         },
         {
             "symbol": "AH.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -3.2520325203252036,
+            "last_5days_percent_change": -4.032258064516129
         },
         {
             "symbol": "IRC.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": 0.7299298019120962,
+            "last_5days_percent_change": -2.1276608696346306
         },
         {
             "symbol": "TKT.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -6.666669021418023,
+            "last_5days_percent_change": -9.999999148505061
         },
         {
             "symbol": "ALLA.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": 0.0,
+            "last_5days_percent_change": -0.6993000580457562
         },
         {
             "symbol": "CRANE.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -6.122451131085289,
+            "last_5days_percent_change": -9.210525490240366
         },
         {
             "symbol": "TCJ.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -3.153150105435783,
+            "last_5days_percent_change": -3.153150105435783
         },
         {
             "symbol": "VARO.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -1.526723336759281,
+            "last_5days_percent_change": -5.147064289007067
         },
         {
             "symbol": "GC.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -1.9417456850635995,
+            "last_5days_percent_change": -6.481479600950885
         },
         {
             "symbol": "AMC.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -0.6896544920278737,
+            "last_5days_percent_change": -2.7027000903735274
         },
         {
             "symbol": "CITY.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -0.9433953776483021,
+            "last_5days_percent_change": -3.669732095175381
         },
         {
             "symbol": "CSP.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -2.3999977111816406,
+            "last_5days_percent_change": -6.153840510802654
         },
         {
             "symbol": "PAP.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -2.5000050291418283,
+            "last_5days_percent_change": -7.142857649699376
         },
         {
             "symbol": "TMT.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -0.6410280706692213,
+            "last_5days_percent_change": -2.5157209316162716
         },
         {
             "symbol": "TSTH.BK",
@@ -253,91 +323,117 @@
             "sell": [
                 "is 3 days red and 5% lost",
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -2.7027000903735274,
+            "last_5days_percent_change": -5.2631529414422
         },
         {
             "symbol": "TCMC.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -4.522614720969393,
+            "last_5days_percent_change": -6.8627445251379875
         },
         {
             "symbol": "ANAN.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -2.459013990675489,
+            "last_5days_percent_change": -5.555550299414001
         },
         {
             "symbol": "CPN.BK",
             "buy": [
                 "is crossing up ema75"
             ],
-            "sell": []
+            "sell": [],
+            "last_day_percent_change": -0.35842293906810035,
+            "last_5days_percent_change": 2.2058823529411766
         },
         {
             "symbol": "ORI.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -1.7094001070560572,
+            "last_5days_percent_change": -1.7094001070560572
         },
         {
             "symbol": "PRIN.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -0.6896544920278737,
+            "last_5days_percent_change": -3.35570147625903
         },
         {
             "symbol": "SIRI.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -4.469269576030464,
+            "last_5days_percent_change": -1.156068248902366
         },
         {
             "symbol": "AIMCG.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -0.9433997912353016,
+            "last_5days_percent_change": -0.9433997912353016
         },
         {
             "symbol": "ALLY.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": 0.0,
+            "last_5days_percent_change": -2.0134177499404435
         },
         {
             "symbol": "GVREIT.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -2.105261150159334,
+            "last_5days_percent_change": -1.5872975826222575
         },
         {
             "symbol": "LPF.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -0.7518825566588301,
+            "last_5days_percent_change": -2.2222236350730613
         },
         {
             "symbol": "CNT.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -1.3986001160915125,
+            "last_5days_percent_change": -5.369130362637857
         },
         {
             "symbol": "RT.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -0.9900980750178164,
+            "last_5days_percent_change": -6.542060656134582
         },
         {
             "symbol": "DEMCO.BK",
@@ -345,14 +441,18 @@
             "sell": [
                 "is 3 days red and 5% lost",
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -1.6129016752173695,
+            "last_5days_percent_change": -8.785042963920004
         },
         {
             "symbol": "GREEN.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -0.8849549119871483,
+            "last_5days_percent_change": -4.2735003547240655
         },
         {
             "symbol": "PTG.BK",
@@ -360,56 +460,72 @@
             "sell": [
                 "is 3 days red and 5% lost",
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -2.2222236350730613,
+            "last_5days_percent_change": -6.382982608903867
         },
         {
             "symbol": "PTTEP.BK",
             "buy": [
                 "is crossing up ema75"
             ],
-            "sell": []
+            "sell": [],
+            "last_day_percent_change": -0.6230529595015576,
+            "last_5days_percent_change": 5.2805280528052805
         },
         {
             "symbol": "SPRC.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": 0.9345830210495534,
+            "last_5days_percent_change": -1.8181800842285156
         },
         {
             "symbol": "SSP.BK",
             "buy": [
                 "is crossing up ema75"
             ],
-            "sell": []
+            "sell": [],
+            "last_day_percent_change": 0.0,
+            "last_5days_percent_change": 2.105261150159334
         },
         {
             "symbol": "WHAUP.BK",
             "buy": [
                 "is crossing up ema75"
             ],
-            "sell": []
+            "sell": [],
+            "last_day_percent_change": 1.0050241623450802,
+            "last_5days_percent_change": 2.5510179256708314
         },
         {
             "symbol": "COM7.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -9.243697478991598,
+            "last_5days_percent_change": -11.475409836065573
         },
         {
             "symbol": "DOHOME.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -2.8168987598808553,
+            "last_5days_percent_change": -4.166662803402539
         },
         {
             "symbol": "MAKRO.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -0.6493506493506493,
+            "last_5days_percent_change": -4.375
         },
         {
             "symbol": "SABUY.BK",
@@ -417,28 +533,36 @@
             "sell": [
                 "is 3 days red and 5% lost",
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -4.3478260869565215,
+            "last_5days_percent_change": -11.29031985160826
         },
         {
             "symbol": "SINGER.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -3.488374156136883,
+            "last_5days_percent_change": -8.287292643019267
         },
         {
             "symbol": "LPH.BK",
             "buy": [
                 "is crossing up ema75"
             ],
-            "sell": []
+            "sell": [],
+            "last_day_percent_change": 0.0,
+            "last_5days_percent_change": 0.9008957149438354
         },
         {
             "symbol": "M-CHAI.BK",
             "buy": [
                 "is 3 days green"
             ],
-            "sell": []
+            "sell": [],
+            "last_day_percent_change": -3.004291845493562,
+            "last_5days_percent_change": 17.402597402597404
         },
         {
             "symbol": "THG.BK",
@@ -446,35 +570,45 @@
                 "is crossing up ema75",
                 "is 3 days green"
             ],
-            "sell": []
+            "sell": [],
+            "last_day_percent_change": 0.36496350364963503,
+            "last_5days_percent_change": 1.1029411764705883
         },
         {
             "symbol": "MPIC.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -5.142859050205776,
+            "last_5days_percent_change": -13.541666472641136
         },
         {
             "symbol": "PLANB.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -1.764701394473805,
+            "last_5days_percent_change": -4.0229820168809125
         },
         {
             "symbol": "TH.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -2.1978065884352573,
+            "last_5days_percent_change": -8.717952417277019
         },
         {
             "symbol": "TKS.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -5.263153051515299,
+            "last_5days_percent_change": -9.999998410542805
         },
         {
             "symbol": "VGI.BK",
@@ -482,28 +616,36 @@
                 "is under ema75 but last 2 are green",
                 "is 3 days green"
             ],
-            "sell": []
+            "sell": [],
+            "last_day_percent_change": 0.0,
+            "last_5days_percent_change": 1.5228411651818354
         },
         {
             "symbol": "ASIMAR.BK",
             "buy": [
                 "is under ema75 but last 2 are green"
             ],
-            "sell": []
+            "sell": [],
+            "last_day_percent_change": -0.5917224457964548,
+            "last_5days_percent_change": -1.1764764455773846
         },
         {
             "symbol": "BA.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -2.941180595477044,
+            "last_5days_percent_change": -0.7518825566588301
         },
         {
             "symbol": "JWD.BK",
             "buy": [
                 "is crossing up ema75"
             ],
-            "sell": []
+            "sell": [],
+            "last_day_percent_change": -0.500001907348615,
+            "last_5days_percent_change": 0.505052451126134
         },
         {
             "symbol": "PORT.BK",
@@ -511,35 +653,45 @@
                 "is under ema75 but last 2 are green",
                 "is 3 days green"
             ],
-            "sell": []
+            "sell": [],
+            "last_day_percent_change": 0.0,
+            "last_5days_percent_change": 0.0
         },
         {
             "symbol": "PRM.BK",
             "buy": [
                 "is crossing up ema75"
             ],
-            "sell": []
+            "sell": [],
+            "last_day_percent_change": -1.31578823536055,
+            "last_5days_percent_change": 3.4482758620689653
         },
         {
             "symbol": "RCL.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -4.761904761904762,
+            "last_5days_percent_change": -8.256880733944955
         },
         {
             "symbol": "DELTA.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -8.506224066390041,
+            "last_5days_percent_change": -19.818181818181817
         },
         {
             "symbol": "KCE.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -5.555555555555555,
+            "last_5days_percent_change": -8.108108108108109
         },
         {
             "symbol": "TEAM.BK",
@@ -547,14 +699,18 @@
             "sell": [
                 "is 3 days red and 5% lost",
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -2.5157209316162716,
+            "last_5days_percent_change": -6.6265081698289405
         },
         {
             "symbol": "W.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": 0.0,
+            "last_5days_percent_change": -3.6649180348741477
         },
         {
             "symbol": "AIT.BK",
@@ -562,7 +718,9 @@
             "sell": [
                 "is 3 days red and 5% lost",
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -2.521002072919383,
+            "last_5days_percent_change": -8.661412947368065
         },
         {
             "symbol": "HUMAN.BK",
@@ -570,52 +728,66 @@
             "sell": [
                 "is 3 days red and 5% lost",
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -1.754384350505089,
+            "last_5days_percent_change": -5.882351526928784
         },
         {
             "symbol": "INET.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -0.9615329948400716,
+            "last_5days_percent_change": -2.830190376778715
         },
         {
             "symbol": "INTUCH.BK",
             "buy": [
                 "is crossing up ema75"
             ],
-            "sell": []
+            "sell": [],
+            "last_day_percent_change": -1.006711409395973,
+            "last_5days_percent_change": 0.6825938566552902
         },
         {
             "symbol": "JTS.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -3.546099290780142,
+            "last_5days_percent_change": -13.924050632911392
         },
         {
             "symbol": "MFEC.BK",
             "buy": [],
             "sell": [
                 "is crossing down ema75"
-            ]
+            ],
+            "last_day_percent_change": -1.8987353614766647,
+            "last_5days_percent_change": -3.7267103556115204
         },
         {
             "symbol": "SAMTEL.BK",
             "buy": [],
             "sell": [
                 "is 3 days red and 5% lost"
-            ]
+            ],
+            "last_day_percent_change": -1.3574647453365973,
+            "last_5days_percent_change": -5.217386436822859
         },
         {
             "symbol": "SYMC.BK",
             "buy": [
                 "is crossing up ema75"
             ],
-            "sell": []
+            "sell": [],
+            "last_day_percent_change": 0.8474527642290024,
+            "last_5days_percent_change": 6.2499984034469875
         }
     ],
     "metadata": {
-        "date": "20230405"
+        "date": "20230406"
     }
 }
