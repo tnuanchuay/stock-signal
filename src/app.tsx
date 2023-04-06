@@ -52,7 +52,7 @@ const AppComponent: React.FC = () => {
     useEffect(() => {
         const fetchData = async () => {
             console.log("Getting Data");
-            const res = await fetch('https://storage.googleapis.com/signals-bck/latest.json');
+            const res = await fetch('https://signals-bck.storage.googleapis.com/latest.json');
             const json = await res.json();
 
             return json;
