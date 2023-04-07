@@ -22,7 +22,7 @@ import { StockSort as Sort } from './constants/sort';
 import { StockFilter } from './constants/filter';
 import { Order } from './constants/order';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { Container, CssBaseline } from '@mui/material';
+import { Container, CssBaseline, TextField } from '@mui/material';
 import Link from '@mui/material/Link';
 
 interface DataState {
@@ -46,6 +46,7 @@ interface DataElement {
 const AppComponent: React.FC = () => {
     const [data, setData] = useState<DataState | undefined>(undefined);
     const [filter, setFilter] = useState(StockFilter.All);
+    const [symbolFilter, setSymbolFilter] = useState("");
     const [sort, setSort] = useState(Sort.BySignal);
     const [order, setOrder] = useState(Order.Descending);
 
@@ -62,6 +63,16 @@ const AppComponent: React.FC = () => {
     }, []);
 
     const filterFunction = (item: DataElement) => {
+        if (symbolFilter != ""){
+            const symbols = symbolFilter.toLocaleLowerCase().split(',');
+            if(symbols
+                .map(symbol => symbol != "" && item.symbol.toLocaleLowerCase().indexOf(symbol) >= 0)
+                .indexOf(true) < 0
+            ){
+                return false
+            }
+        }
+        
         switch (filter) {
             case StockFilter.OnlyBuy:
                 return item.buy.length > 0;
@@ -121,6 +132,12 @@ const AppComponent: React.FC = () => {
             </Box>
             <Container sx={{ mt: '2vh' }}>
                 <Box display="flex" justifyContent="right">
+                    <Box display="flex" flexGrow={1} paddingRight={'2vh'}>
+                        <TextField fullWidth={true} id="outlined-basic" label="Search" placeholder='Multiple search with comma(,) separate' variant="outlined" 
+                        onChange={(event) => {
+                            setSymbolFilter(event.target.value);
+                        }} />
+                    </Box>
                     <Box display="flex">
                         <FilterSelector setFilter={setFilter} />
                     </Box>
