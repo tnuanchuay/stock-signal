@@ -25,7 +25,7 @@ export const Header: React.FC<Props> = (props) => {
 
     const pages: PageLink[] = [
         { title: 'Signals', link: '/signals' },
-        { title: 'Predict 1D', link: '/predict1d' }
+        { title: 'Predict Tomorrow', link: '/predict1d' }
     ];
 
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
