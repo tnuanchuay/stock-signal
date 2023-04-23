@@ -9,14 +9,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import SignalsPage from './pages/signals';
 import Predict1D from './pages/predict1d';
 
-
-
 const darkTheme = createTheme({
     palette: {
         mode: 'dark',
     },
 });
-
 
 const router = createBrowserRouter([
     { path: "/", element: <SignalsPage /> },
